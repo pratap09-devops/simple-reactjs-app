@@ -24,9 +24,7 @@ jobs:
     - name: Production Build
       run: |
         yarn build
-    - name: Unit Tests
-      run: |
-        yarn test
+    
     - name: Deploy to S3
       uses: pratap09-devops/s3-sync-action@master
       with:
